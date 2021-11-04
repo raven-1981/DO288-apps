@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# call original assemble script
+/usr/libexec/s2i/assemble
+
+# Generate info.html with build date
+echo "Built on $(date)" > ./info.html
